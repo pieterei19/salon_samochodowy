@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styl.css" />
+    <title>Konfigurator wyposażenia</title>
+  </head>
+  <body>
+    <main>
+      <section class="baner"><img src="baner.jpg" alt="baner" /></section>
+
+      <section class="lewy">
+        <form onchange="zadanie()">
+          <hr />
+
+          <h2>Kolor</h2>
+
+          <select id="kolor">
+            <option value="szary" selected>szary</option>
+            <option value="niebieski">niebieski</option>
+            <option value="czerwony">czerwony</option>
+            <option value="żółty">żółty</option>
+            <option value="zielony">zielony</option>
+          </select>
+
+          <hr />
+
+          <h2>Felgi</h2>
+
+          <label for="Stalowe"
+            >Stalowe<input type="radio" name="felgi" id="felgi" checked
+          /></label>
+
+          <br />
+
+          <label for="aluminiowe"
+            >Aluminiowe<input type="radio" name="felgi" id="felgi"
+          /></label>
+
+          <hr />
+
+          <h2>Doposażenie</h2>
+
+          <label for="czujniki"
+            >Czujniki parkowania<input
+              type="checkbox"
+              name="czujniki"
+              id="czuj"
+          /></label>
+          <br />
+          <label for="klima"
+            >Climatronic<input type="checkbox" name="klima" id="klima"
+          /></label>
+          <br />
+          <label for="nawigacja"
+            >Nawigacja<input type="checkbox" name="nawigacja" id="nawi"
+          /></label>
+          <hr />
+        </form>
+      </section>
+      <section class="prawy">
+        <h1>Twój samochód</h1>
+        <img id="samochod" src="szary.png" alt="foto" />
+        <h1>Wycena</h1>
+        <p>Cena bazowa 75000zł</p>
+        <p id="1"></p>
+        <p id="2"></p>
+        <p id="3"></p>
+      </section>
+      <footer>Autor strony: <i>12345678910</i></footer>
+    </main>
+  </body>
+</html>
+<script>
+  function zadanie() {
+    let kolor = document.querySelector('select').value;
+    document.getElementById('samochod').innerHTML =
+      '<img src="' + kolor + '.png">';
+  }
+</script>

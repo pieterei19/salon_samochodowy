@@ -1,0 +1,56 @@
+* {
+  font-family: Verdana;
+  background-color: #7d7f85;
+}
+main {
+  width: 800px;
+  margin: auto;
+}
+.baner {
+  height: 200px;
+  width: 100%;
+  clear: both;
+}
+.lewy {
+  background-color: #f8c013;
+  text-align: center;
+  height: 600px;
+  width: 30%;
+  float: left;
+}
+.prawy {
+  background-color: #c2c3c2;
+  text-align: center;
+  color: #886829;
+  height: 560px;
+  width: 70%;
+  padding-top: 40px;
+  float: right;
+}
+footer {
+  clear: both;
+  background-color: #1a3b98;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+footer > * {
+  background-color: #1a3b98;
+}
+#samochod {
+  width: 75%;
+  margin: auto;
+}
+p {
+  margin-top: 30px;
+  margin-right: 50px;
+  text-align: right;
+}
+form,
+form > * {
+  background-color: #f8c013;
+  text-align: center;
+}
+.prawy > * {
+  background-color: #c2c3c2;
+}
